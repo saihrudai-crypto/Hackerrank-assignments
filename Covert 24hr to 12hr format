@@ -1,0 +1,54 @@
+(QUESTION)
+You are given two integers h and m, representing time in 24-hour format:
+
+h → Hour (0 to 23)
+m → Minutes (0 to 59)
+Your task is to convert this time into 12-hour format and print the result in the form:
+
+(SOLUTION):-
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void time(){
+    int h,m;
+    scanf("%d %d",&h,&m);
+//m>10
+    if(m>=10){
+        if(h==0 && m>=0 && m<=59 ){
+            printf("12:%d AM",m);
+        }
+   
+    if(h>12 && h<=23 && m>=0 && m<=59){
+        h=h-12;
+        printf("%d:%d PM",h,m);
+    }
+    else if(h<12 && h>0 && m>=0 && m<=59){
+        printf("%d:%d AM",h,m);
+    }
+    else if(h==12 && m>=0 && m<=59){
+        printf("12:%d PM",m);
+    }}
+    //less than 0
+    if (m<10){
+        if(h==0 && m>=0 && m<=59 ){
+            printf("12:0%d AM",m);
+        }
+   
+    if(h>12 && h<=23 && m>=0 && m<=59){
+        h=h-12;
+        printf("%d:0%d PM",h,m);
+    }
+    else if(h<12 && h>0 && m>=0 && m<=59){
+        printf("%d:0%d AM",h,m);
+    }
+    else if(h==12 && m>=0 && m<=59){
+        printf("12:0%d PM",m);
+    }}
+}
+int main() {
+ time();
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
