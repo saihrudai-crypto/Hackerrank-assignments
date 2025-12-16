@@ -1,0 +1,49 @@
+#include <stdio.h>
+void passcode(){
+ int n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,i1,i2,i3,r1,r2,r3;
+    scanf("%d %d %d %d %d %d %d %d %d %d",&n0,&n1,&n2,&n3,&n4,&n5,&n6,&n7,&n8,&n9);
+    scanf("%d %d",&i1,&r1);
+     scanf("%d %d",&i2,&r2);
+     scanf("%d %d",&i3,&r3);
+    
+    if(i1==0){n0=n0+r1; if(n0>9) n0=n0-10 ;}
+     else if(i1==1){n1=n1+r1; if(n1>9) n1=n1-10;}
+     else if(i1==2){n2=n2+r1; if(n2>9) n2=n2-10;}
+     else if(i1==3){n3=n3+r1; if(n3>9) n3=n3-10;}
+     else if(i1==4){n4=n4+r1; if(n4>9) n4=n4-10;}
+     else if(i1==5){n5=n5+r1; if(n5>9) n5=n5-10;}
+     else if(i1==6){n6=n6+r1; if(n6>9) n6=n6-10;}
+     else if(i1==7){n7=n7+r1; if(n7>9) n7=n7-10;}
+     else if(i1==8){n8=n8+r1; if(n8>9) n8=n8-10;}
+     else if(i1==9){n9=n9+r1; if(n9>9) n9=n9-10;}
+    
+     if(i2==0){n0=n0+r2; if(n0>9) n0=n0-10;}
+     else if(i2==1){n1=n1+r2; if(n1>9) n1=n1-10;}
+     else if(i2==2){n2=n2+r2; if(n2>9) n2=n2-10;}
+     else if(i2==3){n3=n3+r2; if(n3>9) n3=n3-10;}
+     else if(i2==4){n4=n4+r2; if(n4>9) n4=n4-10;}
+     else if(i2==5){n5=n5+r2; if(n5>9) n5=n5-10;}
+     else if(i2==6){n6=n6+r2; if(n6>9) n6=n6-10;}
+     else if(i2==7){n7=n7+r2; if(n7>9) n7=n7-10;}
+     else if(i2==8){n8=n8+r2; if(n8>9) n8=n8-10;}
+     else if(i2==9){n9=n9+r2; if(n9>9) n9=n9-10;}
+    
+     if(i3==0){n0=n0+r3; if(n0>9) n0=n0-10;}
+     else if(i3==1){n1=n1+r3; if(n1>9) n1=n1-10;}
+     else if(i3==2){n2=n2+r3; if(n2>9) n2=n2-10;}
+     else if(i3==3){n3=n3+r3; if(n3>9) n3=n3-10;}
+     else if(i3==4){n4=n4+r3; if(n4>9) n4=n4-10;}
+     else if(i3==5){n5=n5+r3; if(n5>9) n5=n5-10;}
+     else if(i3==6){n6=n6+r3; if(n6>9) n6=n6-10;}
+     else if(i3==7){n7=n7+r3; if(n7>9) n7=n7-10;}
+     else if(i3==8){n8=n8+r3; if(n8>9) n8=n8-10;}
+     else if(i3==9){n9=n9+r3; if(n9>9) n9=n9-10;}
+    
+    printf("%d %d %d %d %d %d %d %d %d %d",n0,n1,n2,n3,n4,n5,n6,n7,n8,n9);
+    
+}
+int main() {
+passcode();
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
