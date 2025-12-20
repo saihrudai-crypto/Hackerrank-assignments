@@ -1,0 +1,43 @@
+#include <stdio.h>
+void budget(){
+    int b,g,f,d,m,e;
+    scanf("%d %d %d %d %d %d",&b,&g,&f,&d,&m,&e);
+    
+    #include <stdio.h>
+
+
+
+    int tf = g * f;
+    int tc = tf + d + m + e;
+
+    if (tc <= b) {
+        if (g > 5 && g <= 50) {
+            if (d < (b * 30) / 100 || tf < (b * 50) / 100) {
+                if (g > 25) {
+                    if (m > 0) {
+                        printf("Celebration Approved");
+                    } else {
+                        printf("Celebration Denied");
+                    }
+                } else {
+                    printf("Celebration Approved");
+                }
+            } else {
+                printf("Celebration Denied");
+            }
+        } else {
+            printf("Celebration Denied");
+        }
+    } else {
+        printf("Celebration Denied");
+    }
+
+ 
+
+
+}
+int main() {
+budget();
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
