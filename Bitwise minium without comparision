@@ -1,0 +1,19 @@
+#include <stdio.h>
+void smaller(){
+    int num1,num2;
+    
+    
+    scanf("%d %d",&num1,&num2);
+    int diff=num1-num2;
+    if(diff>>31==0){
+        printf("%d",num2);
+    }
+    else{
+         printf("%d",num1);
+    }
+}
+int main() {
+smaller();
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
